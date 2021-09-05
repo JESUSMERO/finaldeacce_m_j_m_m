@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="images/mauro.jpeg">
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <header>
+      <img class="header-img" src="images/MERO MAURO  2C_jpg.jpg" alt="Imagen de mauro"> </img>
+      <h1 class="header">MAURO JESUS MERO MERO </h1>
+      <h2 class="subtitle">Curso 4<sup>to</sup> "C"</h2>
+
+      
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#acerca">Acerca de</a> </li>
+            <li class="nav-item"> <a href="#proyec">Mis Proyectos</a> </li>
+            <li class="nav-item"> <a href="#contad">Contacto</a> </li>
+          </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section>
+      <h2 class="header" id="historia">BREVE HISTORIA</h2>
+      <p class="intro">
+        Hola! Mi Nombre es Muaro Mero Mero 👋 Nacido en el Canton Jaramijo Provincia Manabí Ecuador el 29 de gosto de 1998
+        Realise Mis Estudios Primario en la Unidad Educativa "Luis Felipe Chávez",
+        La segundaria en el Colegio "Anibal San Andrés Robledo" Cantón Jaramijo, 
+        Actulamente Estudio en la Universidad "Laica Eloy Alfaro de Manabí", en la Facultad de Ciencias Informáticas,
+        Carrera de "Tecnologia de la Informacion" Actualmente estoy crusando el CUARTO SEMESTRE. 
+        En mis tiempos libre la paso con mis amigos y familia, Ademas hago deporte como Acletismo,Futbol,Basquet.
+        Aquí pueden observar algunos de Mis proyectos mas recientes como cursos,participaciones de la Cruz Roja Cantonal Jaramijo entre otros.
+
+      <ul class="social-media">
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter"/>
+            <p class="social-link-text">Twitter</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com" target="_blank">
+            <img src="images/github-logo.png" alt="Github"/>
+            <p class="social-link-text">Github</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="images/linkedin.png" alt="Linkedin"/>
+            <p class="social-link-text">Linkedin</p>
+          </a>
+        </li>
+      </ul>
+    </p>
+  </section>
+
+    <section>
+      <h2 class="header" id="proyec">ACTIVIDADES </h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Boton para ir hacia atrás"></button>
+        <div class="window">
+          <ul class="project-container">
+
+            <li class="project1-container"><button class="project1 project">
+              <img src="images/foto.jpg" class="project-img" alt="activida de poa"></button>
+            </li>
+
+            
+            <li class="project3-container"><button class="project3 project">
+              <img src="images/ENCUENTRO.jpeg" class="project-img" alt="encuentro provincial"></button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true"><button class="project4 project"
+              tabindex="-1"><img src="images/capacitacion.jpeg" class="project-img" alt="capacitacion"></button>
+            </li>
+
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="images/PLAYA.jpeg" class="project-img" alt="playa"></button>
+            </li>
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="images/jaramijo.jpeg" class="project-img" alt="jaramijo"></button>
+            </li>
+
+          </ul>
+        </div>
+        <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="contact-section">
+      <h2 class="header" id="contad">Contacto</h2>
+      <p class="intro">SI TE INTERESA UNA DE NUESTRAS ACTIVIDADES NOS PUEDES CONTRACTAR </p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label>
+          <input type="text" aria-label="nombre" id="name"/>
+        <span id="name-error" aria-live="assertive"></span> <br/>
+        <label class="form-label">Correo</label>
+          <input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje <input type="text" /> <br/>  </label>
+      <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">VOLUNTARIOS DE LA JUNTA CANTONAL JARAMIJO</h2>
+          <img src="images/ENCUENTRO.jpeg" class="modal-project-image" alt="pantallazo del proyecto"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
